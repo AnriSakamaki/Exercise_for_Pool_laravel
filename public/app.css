@@ -1,0 +1,62 @@
+body {
+    background: white;
+    color: black;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+a {
+    color: purple;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+/* ─────── 記事一覧表示のデザイン ─────── */
+article + article {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #c5c5c5;
+}
+
+/* ─────── ヘッダー ─────── */
+.site-header {
+    background-color: #f8ebc5;
+    color: #655656;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-header h1,
+.site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #655656;
+    margin: 0;
+    text-decoration: none;
+}

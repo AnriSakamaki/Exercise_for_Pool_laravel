@@ -1,0 +1,23 @@
+/* post.css */
+
+body {
+    background: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+/* コンテンツ本体を中央に */
+.post-container {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+/* 文字サイズを大きくする */
+.post-body {
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #333;
+}
