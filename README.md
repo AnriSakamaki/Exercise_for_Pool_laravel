@@ -117,3 +117,13 @@ slug は、記事のURLとして使用される文字列です。
 通常はタイトルを英語でハイフン区切りにしたものを指定してください。
 
 タイトルが「My Third Post」の場合 → slug: "my-third-post"
+
+## 🔁 記事を追加したあとにやること
+
+Laravelは一部のデータをキャッシュするため、記事を新しく追加したときに反映されないことがあります。  
+その場合は以下のコマンドを実行してください：
+
+```bash
+docker-compose exec app php artisan cache:clear
+docker-compose exec app php artisan view:clear
+docker-compose exec app php artisan config:clear
