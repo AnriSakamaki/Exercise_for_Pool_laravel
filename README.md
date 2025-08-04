@@ -7,8 +7,8 @@
 
 ## 🔧 環境構成
 
-- Laravel: 8.x 以上
-- PHP: 8.x
+- Laravel: 12.0 以上
+- PHP: 8.4.8
 - Webサーバー: Nginx / Apache
 - データベース: MySQL （今回は使用していない）
 - Docker / Docker Compose
@@ -20,8 +20,8 @@
 ### 1. リポジトリをクローン
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/AnriSakamaki/Exercise_for_Pool_laravel.git
+cd Exercise_for_Pool_laravel.git
 ```
 
 ### 2. `.env` ファイルを作成
@@ -41,9 +41,9 @@ docker-compose up -d --build
 ### 4. Laravel の初期設定（初回のみ）
 
 ```bash
-docker exec -it app php artisan key:generate
-docker exec -it app php artisan migrate
-# 必要であればシードも実行
+docker exec -it laravel-app php artisan key:generate
+docker exec -it laravel-app php artisan migrate
+# 必要であればシードも実行（今回はDBをしようしていないため必要ありません）
 # docker exec -it app php artisan db:seed
 ```
 
@@ -55,28 +55,6 @@ docker exec -it app php artisan migrate
 
 ```
 http://localhost:8000
-```
-
----
-
-## 🧪 よく使うコマンド（Docker内）
-
-- Artisan コマンド実行：
-
-```bash
-docker exec -it app php artisan <コマンド>
-```
-
-- Composer インストール：
-
-```bash
-docker exec -it app composer install
-```
-
-- Laravel テスト実行：
-
-```bash
-docker exec -it app php artisan test
 ```
 
 ---
